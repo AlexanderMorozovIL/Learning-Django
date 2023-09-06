@@ -13,6 +13,9 @@
             <a href='{% url "by_rubric" rubric.pk %}'>{{ rubric.name }}</a>
             {% endfor %}
         </div>
+        <div>
+            <a href='{% url 'add' %}'>Добавить</a>
+        </div>
         {% for bb in bbs %}
         <div>
             <h2>{{ bb.title }}</h2>
